@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인사교류 활성화·채용제도 개선 입법예고 | 행정안전부</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f3ec;
+    --paper-deep: #efe9dc;
+    --ink: #1e2b32;
+    --ink-soft: #4a5960;
+    --line: #d9d1bd;
+    --teal: #2c5f66;
+    --teal-deep: #1c4046;
+    --bronze: #8a6a35;
+    --bronze-deep: #6b5027;
+    --brick: #9c3f2c;
+    --paper-white: #fffdf8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--teal-deep); }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 96px;
+  }
+
+  /* ---------- Header / Masthead ---------- */
+
+  .masthead {
+    padding: 56px 0 40px;
+    border-bottom: 3px solid var(--ink);
+    opacity: 0;
+    animation: rise 0.7s ease-out forwards;
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .agency-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.84rem;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+    letter-spacing: 0.01em;
+  }
+
+  .agency-name {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .headline {
+    font-family: 'Noto Serif KR', serif;
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4.2vw, 2.6rem);
+    line-height: 1.35;
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+  }
+
+  .lede {
+    font-size: 1.08rem;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: 62ch;
+  }
+
+  .highlights {
+    margin: 32px 0 0;
+    padding: 24px 28px;
+    background: var(--paper-white);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .highlights p {
+    margin: 0 0 8px;
+    padding-left: 16px;
+    position: relative;
+  }
+  .highlights p:last-child { margin-bottom: 0; }
+  .highlights p::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--bronze);
+  }
+  .highlights strong { color: var(--ink); font-weight: 600; }
+
+  /* ---------- Sections ---------- */
+
+  section.block {
+    margin-top: 64px;
+  }
+
+  .block-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+
+  .block-num {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.05rem;
+    color: var(--paper-white);
+    background: var(--teal);
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  .block.recruit .block-num {
+    background: var(--bronze);
+  }
+
+  .block-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .block-sub {
+    color: var(--ink-soft);
+    margin: 10px 0 24px;
+    padding-left: 48px;
+    max-width: 58ch;
+  }
+
+  .item-list {
+    list-style: none;
+    margin: 0 0 0 48px;
+    padding: 0;
+    border-left: 2px solid var(--line);
+  }
+
+  .item-list li {
+    position: relative;
+    padding: 4px 0 24px 24px;
+  }
+
+  .item-list li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--teal);
+    border: 2px solid var(--paper);
+  }
+
+  .block.recruit .item-list li::before {
+    background: var(--bronze);
+  }
+
+  .item-list li:last-child { padding-bottom: 4px; }
+
+  .item-title {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+    color: var(--ink);
+  }
+
+  .item-body {
+    color: var(--ink-soft);
+    font-size: 0.97rem;
+  }
+
+  /* ---------- Timeline ---------- */
+
+  .timeline {
+    margin-top: 64px;
+    padding: 28px 30px;
+    background: var(--paper-deep);
+    border-radius: 4px;
+  }
+
+  .timeline h2 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.15rem;
+    margin: 0 0 12px;
+  }
+
+  .timeline p {
+    margin: 0 0 10px;
+    color: var(--ink-soft);
+  }
+  .timeline p:last-child { margin-bottom: 0; }
+
+  /* ---------- Quote ---------- */
+
+  blockquote {
+    margin: 64px 0 0;
+    padding: 8px 0 8px 32px;
+    border-left: 4px solid var(--brick);
+    position: relative;
+  }
+
+  blockquote p {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.22rem;
+    line-height: 1.65;
+    color: var(--ink);
+    margin: 0 0 14px;
+  }
+
+  blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.92rem;
+    color: var(--brick);
+    font-weight: 600;
+  }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    margin-top: 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  @media (max-width: 560px) {
+    .block-sub, .item-list { margin-left: 0; padding-left: 0; border-left: none; }
+    .item-list li { padding-left: 22px; }
+    .item-list li::before { left: 0; }
+    .highlights { padding: 20px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .masthead { animation: none; opacity: 1; }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--teal-deep);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="agency-row">
+      <span class="agency-name">행정안전부 · 지방인사제도과</span>
+      <span>2026. 5. 11.(월) 배포</span>
+    </div>
+    <h1 class="headline">공무원 인사교류 활성화 및<br>채용제도 개선 입법예고</h1>
+    <p class="lede">
+      중앙부처·지방정부·민간기업 간 벽을 허무는 '프로젝트 기반 인사교류'를 활성화하기 위해,
+      행정안전부가 교류 참여자에게 실질적인 인사 혜택을 주는 「지방공무원 임용령」·「지방공무원 평정규칙」
+      개정안을 5월 11일부터 6월 10일까지 입법예고합니다.
+    </p>
+
+    <div class="highlights">
+      <p><strong>핵심 인사교류 직위·민간기업 전담공무원</strong>의 승진 소요 연수를 최대 1년까지 단축합니다.</p>
+      <p>1년 이상 우수 근무자에게는 <strong>특별승진</strong>을 부여하고, 근무성적 '우' 이상·성과급 'A' 이상을 <strong>의무 보장</strong>합니다.</p>
+      <p>2027년부터 8급 공채 한국사 과목을 <strong>한국사능력검정시험(3급 이상)</strong>으로 대체합니다.</p>
+    </div>
+  </header>
+
+  <section class="block incentive">
+    <div class="block-head">
+      <span class="block-num">1</span>
+      <h2 class="block-title">파격적인 승진·평가 인센티브</h2>
+    </div>
+    <p class="block-sub">
+      국책사업이나 지역 현안 대응을 위한 '핵심 인사교류' 직위와 '민간기업 전담공무원'에게
+      확실한 보상 체계를 마련합니다.
+    </p>
+    <ul class="item-list">
+      <li>
+        <span class="item-title">승진 소요 연수 단축</span>
+        <span class="item-body">핵심 인사교류 직위 또는 민간기업 전담공무원으로 근무하면, 교류 기간의 절반을 최대 1년 범위에서 승진 소요 연수에서 감면합니다.</span>
+      </li>
+      <li>
+        <span class="item-title">특별승진 기회 부여</span>
+        <span class="item-body">해당 직위에서 1년 이상 근무하며 우수한 성과를 낸 공무원에게는 특별승진 기회를 부여합니다.</span>
+      </li>
+      <li>
+        <span class="item-title">대우공무원 혜택 확대</span>
+        <span class="item-body">기존 인사교류자에게만 적용되던 '교류 기간 경력 100% 단축' 혜택을 민간기업 전담공무원에게도 동일하게 확대합니다.</span>
+      </li>
+      <li>
+        <span class="item-title">평가·성과급 보장</span>
+        <span class="item-body">인사교류자는 일반 공무원과 평정 단위를 분리해 근무성적 최소 '우' 등급, 성과급 최소 'A' 등급을 의무 보장받으며, 최상위 우수자에게는 특별성과가산금도 지급할 수 있습니다.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="block recruit">
+    <div class="block-head">
+      <span class="block-num">2</span>
+      <h2 class="block-title">수험생 부담 완화 및 우수 인재 채용 확대</h2>
+    </div>
+    <p class="block-sub">
+      지방공무원 공채·경력경쟁 채용 제도를 시대 흐름에 맞게 개선합니다.
+    </p>
+    <ol class="item-list">
+      <li>
+        <span class="item-title">8급 한국사 과목 대체</span>
+        <span class="item-body">2027년부터 8급 공채 한국사 과목을 9급과 동일하게 '한국사능력검정시험(3급 이상)'으로 대체해 수험 부담을 덜고 시험 간 호환성을 높입니다.</span>
+      </li>
+      <li>
+        <span class="item-title">경력 단축 및 직급 확대</span>
+        <span class="item-body">최신 경력 반영이 중요한 분야의 경채시험은 필요 경력을 1년 범위에서 단축할 수 있게 하고, 우수 인재 추천채용제 대상 직급을 기존 8급 이하에서 7급까지 확대합니다.</span>
+      </li>
+      <li>
+        <span class="item-title">취약 청년 공직 진출 지원</span>
+        <span class="item-body">9급 공채 저소득층 구분모집 대상에 '자립준비청년'과 '보호기간 연장청년'을 신규 추가하고, 기초생활수급자·한부모가족 지원 대상자의 자격 유지 기간을 2년에서 1년으로 완화합니다.</span>
+      </li>
+    </ol>
+  </section>
+
+  <div class="timeline">
+    <h2>시행 일정</h2>
+    <p>개정안은 2026년 5월 11일(월)부터 6월 10일(화)까지 입법예고되며, 국민 누구나 행정안전부 누리집 또는 대한민국 전자관보를 통해 의견을 제출할 수 있습니다.</p>
+    <p>예고 기간 종료 후 규제심사·법제처 심사를 거쳐 2026년 하반기 중 공포·시행될 예정입니다.</p>
+  </div>
+
+  <blockquote>
+    <p>"이번 조치는 프로젝트 기반 인사교류를 통해 대규모 국책사업 등에 참여하는 공무원에게 파격적인 인센티브를 부여해 보다 성공적인 사업 추진을 돕기 위한 것입니다. 앞으로도 공직사회의 개방성을 확대하고 활력을 제고할 수 있도록 지방인사제도를 적극적으로 개선해 나가겠습니다."</p>
+    <cite>윤호중 행정안전부 장관</cite>
+  </blockquote>
+
+  <footer>
+    <span>담당 부서: 지방인사제도과</span>
+    <span>문의: 김정민 (044-205-3347)</span>
+  </footer>
+
+</div>
+</body>
+</html>
